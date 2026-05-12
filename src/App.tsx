@@ -88,9 +88,9 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="text-neutral-400 text-sm md:text-base max-w-md mx-auto leading-relaxed border-t border-white/5 pt-6 mt-6"
+            className="text-neutral-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed border-t border-white/5 pt-6 mt-6"
           >
-            نعمل حالياً على تطوير موقعنا الإلكتروني لنقدم لكم تجربة عقارية استثنائية تليق بكم. ترقبوا الإطلاق الرسمي قريباً.
+            نعمل على تطوير موقعنا الالكتروني الرسمي لنقدم لكم تجربة عقارية فريدة تليق بعملائنا المميزين
           </motion.p>
         </div>
 
