@@ -11,13 +11,13 @@ export default function App() {
   const whatsappLink = `https://wa.me/96599017757`;
 
   return (
-    <div className="min-h-screen bg-brand-bg text-white flex flex-col items-center justify-center p-6 selection:bg-red-600/30 overflow-x-hidden relative" dir="rtl">
+    <div className="min-h-screen bg-brand-bg text-white flex flex-col items-center justify-center p-6 selection:bg-brand-gold/30 overflow-x-hidden relative" dir="rtl">
       
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-red-600/5 blur-[120px] rounded-full"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-red-900/5 blur-[100px] rounded-full -mr-48 -mt-48"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-900/5 blur-[100px] rounded-full -ml-48 -mb-48"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-gold/5 blur-[120px] rounded-full"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-gold/5 blur-[100px] rounded-full -mr-48 -mt-48"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-gold/5 blur-[100px] rounded-full -ml-48 -mb-48"></div>
       </div>
 
       <main className="relative z-10 w-full max-w-4xl flex flex-col items-center text-center">
@@ -37,14 +37,14 @@ export default function App() {
             <img 
               src="/logo.png" 
               alt="Top Signature Logo" 
-              className="max-w-[280px] md:max-w-[420px] h-auto rounded-2xl shadow-2xl shadow-black/50 transition-all duration-700"
+              className="max-w-[280px] md:max-w-[420px] h-auto rounded-2xl shadow-2xl shadow-black/50 transition-all duration-700 mix-blend-lighten"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 const fallback = e.currentTarget.parentElement?.querySelector('.fallback-icon');
                 if (fallback) (fallback as HTMLElement).style.display = 'flex';
               }}
             />
-            <div className="fallback-icon hidden w-32 h-32 md:w-48 md:h-48 bg-gradient-to-br from-red-600 to-red-800 rounded-3xl shadow-2xl shadow-red-900/20 items-center justify-center mx-auto">
+            <div className="fallback-icon hidden w-32 h-32 md:w-48 md:h-48 bg-gradient-to-br from-brand-gold to-yellow-600 rounded-3xl shadow-2xl shadow-brand-gold/20 items-center justify-center mx-auto">
                <Building2 size={80} className="text-white" strokeWidth={1.5} />
             </div>
           </div>
@@ -59,10 +59,10 @@ export default function App() {
             className="flex items-center justify-center gap-3 mb-2"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold/40 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-gold"></span>
             </span>
-            <span className="text-red-500 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase">تحت التطوير | UNDER CONSTRUCTION</span>
+            <span className="text-brand-gold text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase font-sans">تحت التطوير | UNDER CONSTRUCTION</span>
           </motion.div>
 
           <motion.h1
@@ -105,7 +105,7 @@ export default function App() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-3 bg-red-600 text-white h-14 rounded-2xl font-bold shadow-xl shadow-red-900/20 transition-all hover:bg-red-500 active:scale-95"
+            className="flex-1 flex items-center justify-center gap-3 bg-brand-gold text-neutral-900 h-14 rounded-2xl font-bold shadow-xl shadow-brand-gold/10 transition-all hover:bg-yellow-400 active:scale-95 text-lg"
           >
             <MessageCircle size={20} />
             <span>واتساب</span>
@@ -129,10 +129,10 @@ export default function App() {
           <div className="flex flex-col gap-2">
             <a 
               href="mailto:Ahmad@top-signature.net" 
-              className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-xl hover:border-red-600/50 transition-all group"
+              className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-xl hover:border-brand-gold/50 transition-all group"
             >
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-red-600/10 flex items-center justify-center text-red-500 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                <div className="w-8 h-8 rounded-lg bg-brand-gold/10 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-neutral-900 transition-colors">
                   <Mail size={16} />
                 </div>
                 <span className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors font-sans">Ahmad@top-signature.net</span>
@@ -140,10 +140,10 @@ export default function App() {
             </a>
             <a 
               href="mailto:Ohoud@top-signature.net" 
-              className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-xl hover:border-red-600/50 transition-all group"
+              className="flex items-center justify-between p-4 bg-white/5 border border-white/10 rounded-xl hover:border-brand-gold/50 transition-all group"
             >
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-lg bg-red-600/10 flex items-center justify-center text-red-500 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                <div className="w-8 h-8 rounded-lg bg-brand-gold/10 flex items-center justify-center text-brand-gold group-hover:bg-brand-gold group-hover:text-neutral-900 transition-colors">
                   <Mail size={16} />
                 </div>
                 <span className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors font-sans">Ohoud@top-signature.net</span>
@@ -160,7 +160,7 @@ export default function App() {
           className="mt-16 flex flex-col items-center gap-6 text-neutral-600 pb-12"
         >
           <div className="flex items-center gap-2 text-xs font-bold tracking-widest">
-            <MapPin size={18} className="text-red-600" />
+            <MapPin size={18} className="text-brand-gold" />
             <span>الكويت - KUWAIT</span>
           </div>
           <div className="py-2 px-6 bg-white/5 rounded-full border border-white/5">

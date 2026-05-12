@@ -3,9 +3,10 @@
 
 @theme {
   --font-cairo: "Cairo", sans-serif;
-  --color-brand-bg: #0A0A0A;
-  --color-brand-secondary: #111111;
-  --color-brand-card: #161616;
+  --color-brand-bg: #0c1622;
+  --color-brand-secondary: #091019;
+  --color-brand-card: #121e2d;
+  --color-brand-gold: #f9c80e;
 }
 
 body {
